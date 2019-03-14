@@ -1,0 +1,32 @@
+#include <iostream>
+#include <conio.h>
+#include <iomanip>
+
+using namespace std;
+
+int main ()
+{
+	double d1, d2, d3, d4, d5, sum, average;
+
+	cout << "Enter 5 Decimal Numbers" << endl;
+	cin >> d1;
+	cin >> d2;
+	cin >> d3;
+	cin >> d4;
+	cin >> d5;
+
+	sum = d1 + d2 + d3 + d4 + d5;
+	average = sum/5;
+
+	cout << "The five decimal numbers are:" << d1 << ',' << d2 << ',' << d3 << ',' << d4 << ',' << d5 << endl;
+	cout << "The sum of the five decimals are:" << sum << endl;
+	cout << "The average of the five decimals are:" << average << endl;
+	cout << "Nearest Integer:" << static_cast <int> (d1) << endl;
+	cout << "Nearest Integer:" << static_cast <int> (d2) << endl;
+	cout << "Nearest Integer:" << static_cast <int> (d3) << endl;
+	cout << "Nearest Integer:" << static_cast <int> (d4) << endl;
+	cout << "Nearest Integer:" << static_cast <int> (d5) << endl;
+
+	_getch();
+	return 0;
+}
